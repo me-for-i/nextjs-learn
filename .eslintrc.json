@@ -1,6 +1,23 @@
 {
   "extends": "next/core-web-vitals",
+  "plugins": [
+    "import"
+  ],
   "rules": {
-    "react/display-name": "off"
+    "react/display-name": "off",
+    "import/order": [
+      "error",
+      {
+        "group": [
+          "builtin",
+          "external",
+          "internal",
+          "sibling",
+          "parent",
+          "index",
+          "unknown"
+        ]
+      }
+    ]
   }
 }
